@@ -42,12 +42,26 @@
     --mb-4: 2rem;
     --mb-5: 2.5rem;
     --mb-6: 3rem;
+
+    /* Padding */
+    --pb-1: .5rem;
+    --pb-2: 1rem;
+    --pb-3: 1.5rem;
+    --pb-4: 2rem;
+    --pb-5: 2.5rem;
+    --pb-6: 3rem;
 } 
 
 
 @media screen and (min-width: 768px) {
     :root {
-
+        --biggest-font-size: 2rem;
     }
 }
 
+/* test test */
+*{
+    margin:0;
+}
+
+/* test */
