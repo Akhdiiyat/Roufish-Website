@@ -12,7 +12,7 @@
     --text-color-alt : #000000;
     --container-color : #FFFFFF;
 
-    /* Shadow */
+    /*============ Shadow ============*/
     --text-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
     --box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
 
@@ -26,7 +26,7 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
     
-    /* Font Weight */
+    /*============ Font Weight ============*/
     --font-extra-light: 200;
     --font-light: 300;  
     --font-regular: 400;
@@ -35,7 +35,7 @@
     --font-bold: 700;
     --font-extra-bold: 800;
 
-    /* Margin */
+    /*============ Margin ============*/
     --mb-1: .5rem;
     --mb-2: 1rem;
     --mb-3: 1.5rem;
@@ -47,7 +47,7 @@
 
 @media screen and (min-width: 768px) {
     :root {
-
+        
     }
 }
 
