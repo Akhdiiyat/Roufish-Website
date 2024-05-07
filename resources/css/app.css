@@ -55,8 +55,14 @@
 
 @media screen and (min-width: 768px) {
     :root {
+<<<<<<< HEAD
             /* jasir */
             /* tes */
+=======
+        --biggest-font-size: 2rem;
+            /* jasir */
+            /*  */
+>>>>>>> refs/remotes/origin/main
     }
 }
 
