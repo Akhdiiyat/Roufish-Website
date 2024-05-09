@@ -56,21 +56,15 @@
 @media screen and (min-width: 768px) {
     :root {
         --biggest-font-size: 2rem;
-
     }
 }
 * {
-    margin: 0;
-    padding: 0;
     background-color: var(--background-color);
     font-family: 'Inter';
 }
 
 .navbar-brand {
-    font-weight: 500;
-    color: white;
-    font-size:24px;
-    transition: 0.3s color;
+    margin-left: 30px;
 }
 
 .login-btn {
@@ -81,7 +75,7 @@
     text-decoration: none;
     transition: 0.3s color;
 }
-
+    
 .login-btn:hover {
     color: #000000;
 }
@@ -91,7 +85,7 @@
     color: white;
     font-size: 14px;
     padding: 8px 20px;
-    margin-right: 50px;
+    margin-right: 20px;
     border-radius: 5px;
     text-decoration: none;
     transition: 0.3s color;
@@ -100,15 +94,31 @@
 .signup-btn:hover {
     color:#000000;
 }
+@media screen and (max-width: 768px){
+    .offcanvas-body{
+      position: fixed;
+      left: 0;
+      
+      padding: 1.5rem 0 1rem;
+      text-align: center;
+      background-color: var(--body-color);
+      transition: .4s;
+      box-shadow: 0 4px 4px rgba(0,0,0,.1);
+      border-radius: 0 0 1rem 1rem;
+      z-index: var(--z-fixed);
+    }
+  }
 
 .navbar {
     background-color: var(--background-color);
-    height: 80px;
+    height: 80px;   
+    justify-content: space-between;
+    align-items: center;
 }
 @media (max-width: 992px) {
     .navbar {
         height: 60px;
-    }
+    }   
 }
 
 .navbar-toggler {
@@ -130,30 +140,29 @@
     transition: .3s;
 }
 
-.nav-link::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
-    background-color: var(--main-color);
-    visibility: hidden;
-    transition: 0.3s ease-in-out;
-  }
-
 .nav-link:hover, .nav-link.active {
-    color: white;
+    color: #000;
 }
 
-.nav-link:hover::before .nav-link:active{
-    width: 100%;
-    visibility: visible;
-  }
-  
-  .nav-link:hover::before, .nav-link.active::before {
-    width: 100%;
-    visibility: visible;
-  }
+@media screen and (min-width: 768px){
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: var(--main-color);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 80%;
+        visibility: visible;
+    }
+    
+}
+
+
 
